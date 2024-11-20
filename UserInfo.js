@@ -9,7 +9,7 @@ const UserInfo = () => {
 
   return (
     <View style={styles.container}>
-        <Text style={styles.title}>내 정보 수정</Text>
+        {/* <Text style={styles.title}>내 정보 수정</Text> */}
       {/* First ScrollView for Personal Settings */}
       <ScrollView style={styles.scrollView}>
         <Text style={styles.sectionTitle}>개인설정</Text>
