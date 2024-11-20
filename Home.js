@@ -20,7 +20,7 @@ const Home = () => {
         <Text style={styles.paymentText}>결제 수단 등록</Text>
       </TouchableOpacity>
 
-      {/* Banner Section */}
+      
       <View style={styles.banner}>
         <Text style={styles.bannerText}>할인 및 이벤트들</Text>
         <Image source={require("./images/dentalsale.png")} style={styles.bannerImage} resizeMode="cover" />
