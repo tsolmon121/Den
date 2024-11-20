@@ -13,7 +13,7 @@ const App = () => {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="MyPage" component={MyPage} />
-        <Stack.Screen name="UserInfo" component={UserInfo} options={{ title: "User Info" }} />
+        <Stack.Screen name="UserInfo" component={UserInfo} options={{ title: "" }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
