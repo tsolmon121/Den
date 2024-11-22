@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "EastDent",
-    "slug": "EastDent",
+    "name": "EasyDent",
+    "slug": "EasyDent",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
