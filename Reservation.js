@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, TextInput, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
+import BottomNavigation from "./BottomNavigation";
 
 const Reservation = ({ navigation }) => {
     const data = [
@@ -22,6 +23,7 @@ const Reservation = ({ navigation }) => {
             </TouchableOpacity>
           ))}
         </ScrollView>
+        <BottomNavigation activePage="Reservation" />
       </View>
     );
   };

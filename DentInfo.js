@@ -1,28 +1,27 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity } from "react-native";
 
-const DentInfo = ({ route }) => {
-    const { item } = route.params;
-  
-    return (
-      <ScrollView contentContainerStyle={styles.container}>
-        <Text style={styles.header}>{item.name}</Text>
-  
-        <Image
-          style={styles.image}
-          source={item.image} // Dynamically use the image from the data
-        />
-  
-        <Text style={styles.infoText}>주소: Example Address</Text>
-        <Text style={styles.infoText}>전화번호: 010-1234-5678</Text>
-        <Text style={styles.infoText}>진료 시간 및 진료 여부: 9 AM - 6 PM</Text>
-  
-        <TouchableOpacity style={styles.reserveButton}>
-          <Text style={styles.reserveButtonText}>진료 예약</Text>
-        </TouchableOpacity>
-      </ScrollView>
-    );
-  };
+const DentInfo = ({ route, navigation }) => {
+  const { item } = route.params;
+
+  return (
+    <ScrollView contentContainerStyle={styles.container}>
+      <Text style={styles.header}>{item.name}</Text>
+      <Image style={styles.image} source={item.image} />
+      <Text style={styles.infoText}>주소: Example Address</Text>
+      <Text style={styles.infoText}>전화번호: 010-1234-5678</Text>
+      <Text style={styles.infoText}>진료 시간 및 진료 여부: 9 AM - 6 PM</Text>
+
+      <TouchableOpacity
+        style={styles.reserveButton}
+        onPress={() => navigation.navigate("Appointment")}
+      >
+        <Text style={styles.reserveButtonText}>진료 예약</Text>
+      </TouchableOpacity>
+    </ScrollView>
+  );
+};
+
   
 
 const styles = StyleSheet.create({

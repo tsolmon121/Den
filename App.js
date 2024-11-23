@@ -6,6 +6,7 @@ import MyPage from "./MyPage";
 import UserInfo from "./UserInfo";
 import Reservation from "./Reservation";
 import DentInfo from "./DentInfo";
+import Appointment from "./Appointment";
 const Stack = createStackNavigator();
 
 const App = () => {
@@ -24,6 +25,8 @@ const App = () => {
         <Stack.Screen name="UserInfo" component={UserInfo} options={{ title: "내 정보 수정" }} />
         <Stack.Screen name="Reservation" component={Reservation} />
         <Stack.Screen name="DentInfo" component={DentInfo} />
+        <Stack.Screen name="Appointment" component={Appointment} />
+
 
       </Stack.Navigator>
 
